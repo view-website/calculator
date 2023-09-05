@@ -119,6 +119,9 @@ function key(event){
     if (key === 'Enter'){
         equal()
     }
+    if (key === 'Backspace'){
+        ce()
+    }
 }
 
 function plus(){
