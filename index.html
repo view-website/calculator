@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://img.icons8.com/?size=1x&id=52555&format=png">
+    <link rel="icon" href="assets/icon.png">
     <script src="main.js"></script>
 </head>
-<body>
+<body onkeydown="key(event)">
     <div id="calculator">
-        <button id="value">0</button>
-        <button id ="ce" class="math" onclick="ce()">AC</button>
+        <button id="value" onclick="copy()" onmouseout="outFunc()">0</button>
+        <span class="tooltiptext" id="myTooltip"></span>
+        <button id ="ce" class="math" onclick="ce()">CE</button>
         <br>
         <button onclick="seven()">7</button>
         <button onclick="eight()">8</button>
